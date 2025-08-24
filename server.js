@@ -82,4 +82,4 @@ app.patch("/api/requests/:id", async (req, res) => {
 // Health check
 app.get("/health", (_, res) => res.json({ ok: true }));
 
-app.listen(PORT, () => console.log(`🚀 Backend running at http://localhost:${PORT}`));
+app.listen(PORT,"0.0.0.0", () => console.log(`🚀 Backend running at http://localhost:${PORT}`));
